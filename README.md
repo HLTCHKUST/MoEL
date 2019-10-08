@@ -50,7 +50,7 @@ To skip training, please check ***generation_result.txt***.
 
 ***Dataset***
 
-The dataset (empathetic-dialogue) is preprocessed and stored in npy format: sys_dialog_texts.train.npy, sys_target_texts.train.npy, sys_emotion_texts.train.npy which consist of ***parallel*** list of context(source), response(target) and emotion(additional label). 
+The dataset (empathetic-dialogue) is preprocessed and stored in npy format: sys_dialog_texts.train.npy, sys_target_texts.train.npy, sys_emotion_texts.train.npy which consist of ***parallel*** list of context (source), response (target) and emotion label (additional label). 
 
 ***Training&Test***
 
