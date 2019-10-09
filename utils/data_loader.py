@@ -17,6 +17,10 @@ import time
 from model.common_layer import write_config
 from utils.data_reader import load_dataset
 
+torch.manual_seed(0)
+torch.backends.cudnn.deterministic = True
+torch.backends.cudnn.benchmark = False
+
 class Dataset(data.Dataset):
     """Custom data.Dataset compatible with data.DataLoader."""
     def __init__(self, data, vocab):

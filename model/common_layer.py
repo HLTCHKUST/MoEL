@@ -30,7 +30,10 @@ pp = pprint.PrettyPrinter(indent=1)
 import numpy as np
 # import matplotlib.pyplot as plt
 
-
+torch.manual_seed(0)
+torch.backends.cudnn.deterministic = True
+torch.backends.cudnn.benchmark = False
+np.random.seed(0)
 
 class EncoderLayer(nn.Module):
     """

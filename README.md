@@ -56,16 +56,16 @@ The dataset (empathetic-dialogue) is preprocessed and stored in npy format: sys_
 
 MoEL
 ```console
-❱❱❱ python3 main.py --model experts  --label_smoothing --noam --emb_dim 300 --hidden_dim 300 --hop 1 --heads 2 --topk 5 --cuda --pretrain_emb --softmax --basic_learner --schedule 10000 --save_path save/moel
+❱❱❱ python3 main.py --model experts  --label_smoothing --noam --emb_dim 300 --hidden_dim 300 --hop 1 --heads 2 --topk 5 --cuda --pretrain_emb --softmax --basic_learner --schedule 10000 --save_path save/moel/
 
 ```
 Transformer baseline
 ```console
-❱❱❱ python3 main.py --model trs  --label_smoothing --noam --emb_dim 300 --hidden_dim 300 --hop 2 --heads 2 --cuda --pretrain_emb --save_path save/trs
+❱❱❱ python3 main.py --model trs  --label_smoothing --noam --emb_dim 300 --hidden_dim 300 --hop 2 --heads 2 --cuda --pretrain_emb --save_path save/trs/
 
 ```
 Multitask Transformer baseline
 ```console
-❱❱❱ python3 main.py --model trs  --label_smoothing --noam --emb_dim 300 --hidden_dim 300 --hop 2 --heads 2 --cuda --pretrain_emb --multitask --save_path save/multi-trs
+❱❱❱ python3 main.py --model trs  --label_smoothing --noam --emb_dim 300 --hidden_dim 300 --hop 2 --heads 2 --cuda --pretrain_emb --multitask --save_path save/multi-trs/
 
 ```

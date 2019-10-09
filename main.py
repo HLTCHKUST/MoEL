@@ -15,7 +15,10 @@ import numpy as np
 import math
 from tensorboardX import SummaryWriter
 
-
+torch.manual_seed(0)
+torch.backends.cudnn.deterministic = True
+torch.backends.cudnn.benchmark = False
+np.random.seed(0)
 
 data_loader_tra, data_loader_val, data_loader_tst, vocab, program_number = prepare_data_seq(batch_size=config.batch_size)
 
